@@ -1,0 +1,636 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: rgba(49, 83, 88, 0.664);
+}
+
+h1,
+h2,
+h3 {
+    color: rgba(28, 70, 68, 0.918);
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    hyphens: auto;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active,
+ :visited {
+    color: #000000;
+}
+
+a:hover {
+    text-shadow: 1px 0px 10px #004d47;
+    -webkit-transition: 1s linear 0s;
+    -moz-transition: 1s linear 0s;
+    -o-transition: 1s linear 0s;
+    transition: 1s linear 0s;
+    outline: 0 none;
+}
+
+.header-container {
+    display: flex;
+}
+
+.main {
+    width: auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    */
+    gap: 20px 20px;
+    grid-template-areas: ". ." ". ." "section-title-courses section-title-courses" "section-projects section-projects" ". ." "section-title-skills section-title-skills";
+    justify-items: stretch;
+    flex-wrap: wrap;
+    background-color: #89c4c9;
+    border: 8px solid rgba(145, 167, 145, 0.5);
+    /*Параметрырамки*/
+    border-radius: 15% 1%;
+    box-shadow: 0 0 7px rgb(15, 175, 175);
+    border-style: solid;
+}
+
+@media (max-width: 520px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        border-radius: 3% 1%;
+        box-shadow: 0 0 7px rgb(15, 175, 175);
+        border-style: solid;
+    }
+}
+
+.section-title-courses {
+    grid-area: section-title-courses;
+}
+
+.section-projects {
+    grid-area: section-projects;
+}
+
+.section-title-skills {
+    grid-area: section-title-skills;
+}
+
+.section>h2 {
+    display: block;
+    left: 0px;
+}
+
+.section-div {
+    width: 100%;
+    height: 100%;
+}
+
+.section-div>h2 {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 2%;
+}
+
+img {
+    margin: 10px;
+    filter: grayscale(35%);
+    -webkit-filter: grayscale(35%);
+    /*Safari6.0-9.0*/
+    border-radius: 250px;
+    /*Радиусскругления*/
+    border: 5px solid rgba(145, 167, 145, 0.5);
+    /*Параметры рамки*/
+    box-shadow: 0 0 7px rgb(63, 83, 83);
+    /*Параметры тени*/
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    -ms-border-radius: 250px;
+    -o-border-radius: 250px;
+    -webkit-border-radius: 250px;
+}
+
+.contacts-bgimage {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacts-bgimage>h2 {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.contacts-bgimage>ul {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+@media (min-width: 1280px) {
+    .section {
+        width: 100%;
+    }
+    .main-container {
+        background-color: #89c4c9;
+        border: 8px solid rgba(145, 167, 145, 0.5);
+        /*Параметрырамки*/
+        border-radius: 10% 1%;
+        box-shadow: 0 0 7px rgb(15, 175, 175);
+        border-style: solid;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+    .main-container {
+        background-color: #89c4c9;
+        border: 8px solid rgba(145, 167, 145, 0.5);
+        /*Параметрырамки*/
+        border-radius: 3% 1%;
+        box-shadow: 0 0 7px rgb(15, 175, 175);
+        border-style: solid;
+        -webkit-border-radius: 3% 1%;
+        -moz-border-radius: 3% 1%;
+        -ms-border-radius: 3% 1%;
+        -o-border-radius: 3% 1%;
+    }
+    .contacts-bgimage {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .section-bgimage>h2 {
+        margin: auto;
+        padding: auto;
+        text-align: center;
+    }
+    .section-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .section-div>h2 {
+        margin: auto;
+        padding: auto;
+        text-align: center;
+    }
+    pre {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-container {
+        background-color: #89c4c9;
+        border: 8px solid rgba(145, 167, 145, 0.5);
+        /*Параметры рамки*/
+        border-radius: 4% 1%;
+        box-shadow: 0 0 7px rgb(15, 175, 175);
+        border-style: solid;
+    }
+    .nav {
+        display: block;
+        width: 100%;
+    }
+    .toggle {
+        clear: both;
+        display: block !important;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        background: #89c4c9;
+        transition: all .2s linear;
+    }
+    .toggle:hover {
+        background: #3f86a7af;
+    }
+    label {
+        width: 100%;
+    }
+    #checkbox-menu:checked+label .touch li {
+        /*в инпут лейбл и ссылки изменяем*/
+        opacity: 1;
+        /*прозрачность*/
+        visibility: visible;
+        /*отображение элементы, рамки и фона*/
+        transition: all .7s linear;
+        /* не понял пока*/
+        width: 100%;
+    }
+    #checkbox-menu:checked+label .touch {
+        height: 350px;
+    }
+    .menu {
+        /*меню в целом*/
+        display: flex;
+        /*отображение помещаем в флекс контейр для выравнивания*/
+        flex-direction: column;
+        /*в ряд по вертикали*/
+        justify-content: space-around;
+        /*как брахузер распр.просторанство между и вокруг элементов/равномерно*/
+        align-items: center;
+        height: 0;
+        transition: height .3s linear;
+        /*не понял*/
+    }
+    .menu li {
+        /*спичок помещаем в контейнер и выравниваем*/
+        display: flex;
+        align-self: center;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu li a {
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+    }
+    pre {
+        font-size: 11px;
+    }
+    .nav-item:hover {
+        border-color: rgba(0, 225, 255, 0.466);
+    }
+}
+
+#checkbox-menu,
+.toggle {
+    display: none;
+}
+
+.header-container {
+    max-width: 100%;
+    height: 5%;
+    background-color: #004d47;
+    border: 3px solid rgba(145, 167, 145, 0.5);
+    /*Параметры рамки*/
+    box-shadow: 0 0 3px #666;
+    border-style: ridge;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li a:hover {
+    /*подсвечиваем ссылки*/
+    background: #3f86a7af;
+    border-radius: 3px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0 10px;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(224, 238, 237);
+}
+
+.nav-item:hover {
+    background: #0ea182bb;
+    box-shadow: 0 0 0 2px rgb(153, 148, 148);
+    transition: .5s;
+    border-radius: 5px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+@-webkit-keyframes blink6 {
+    10% {
+        transform: scale(1, 1) rotate(80deg);
+    }
+    20% {
+        transform: scale(0, 0) rotate(160deg);
+    }
+    100% {
+        transform: scale(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes blink6 {
+    10% {
+        transform: scale(1, 1) rotate(80deg);
+    }
+    20% {
+        transform: scale(0, 0) rotate(160deg);
+    }
+    100% {
+        transform: scale(0, 0) rotate(0deg);
+    }
+}
+
+#blink6 {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-shadow: 0 0 10px #3d7a97;
+}
+
+#blink6:after,
+#blink6:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 55px;
+    background-image: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 30%), linear-gradient(45deg, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, .4) 50%, rgba(0, 0, 0, 0) 51%), linear-gradient(135deg, rgba(0, 0, 0, 0) 49%, rgba(255, 255, 255, .4) 50%, rgba(0, 0, 0, 0) 51%);
+    -webkit-animation: blink6 10s linear infinite;
+    animation: blink6 10s linear infinite;
+    transform: scale(0, 0) rotate(0deg);
+}
+
+#blink6:before {
+    top: -30%;
+    right: 0;
+    left: auto;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+
+/* .section-skills {
+    order: 4;
+    flex-grow: 2;
+} */
+
+.section-title-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title-skills>h2 {
+    text-align: center;
+}
+
+.section-title-skills>ul {
+    text-align: center;
+}
+
+.section-title-myname>h1 {
+    color: rgba(255, 255, 255, 0.952);
+    text-shadow: 3px 5px 8px rgba(255, 255, 255, 0.74);
+}
+
+.section-profile-title>h3 {
+    color: #000000;
+    text-shadow: 5px 5px 6px rgba(4, 7, 4, 0.74);
+}
+
+.section-about-me {
+    height: 100%;
+}
+
+.content-project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1270px;
+    margin: auto;
+}
+
+.section-item-project {
+    display: block;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+.section-item-project a:first-child {
+    background-color: burlywood;
+    border: 6px solid;
+    border-color: burlywood;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+}
+
+.section-item>span {
+    font-style: italic;
+    color: rgba(253, 255, 255, 0.932);
+    font-weight: bold;
+}
+
+i {
+    padding-right: 10px;
+    color: rgba(15, 48, 53, 0.425);
+}
+
+.link-container {
+    display: block;
+    width: 235px;
+    height: 300px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.section-item-project {
+    overflow: hidden;
+    transition: .4s;
+}
+
+.section-item-project:hover {
+    background-color: #4a696b7c;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 35px 14px rgb(13 13 13 / 4%);
+    box-shadow: 0px 2px 35px 14px rgb(13 13 13 / 4%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.link-container:hover {
+    border-top: none;
+    box-shadow: inset 5px 5px burlywood;
+    box-sizing: border-box;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+
+.luxestate {
+    position: relative;
+    background-image: url(./assets/img/Lluxestate-screenshot.png);
+    background-size: cover;
+}
+
+.wild-vacation {
+    position: relative;
+    background-image: url(./assets/img/Wild-vacation-screenshot.png);
+    background-size: cover;
+}
+
+.roadsite-studio {
+    position: relative;
+    background-image: url(./assets/img/Roadsite-studio-screenshot.png);
+    background-size: cover;
+}
+
+.portfolio-screenshot {
+    position: relative;
+    background-image: url(./assets/img/Portfolio-screenshot.png);
+    background-size: cover;
+}
+
+.image-galery {
+    position: relative;
+    background-image: url(./assets/img/Image-galery-screenshot.png);
+    background-size: cover;
+}
+
+.eco-sounds {
+    position: relative;
+    background-image: url(./assets/img/Eco-sounds-screenshot.png);
+    background-size: cover;
+}
+
+.memory-game {
+    position: relative;
+    background-image: url(./assets/img/Memory-game-screenshot.png);
+    background-size: cover;
+}
+
+.shelter {
+    position: relative;
+    background-image: url(./assets/img/Shelter-screenshot.png);
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    padding: 5px;
+    background-color: #004d47;
+    border: 3px solid rgba(145, 167, 145, 0.5);
+    /*Параметры рамки*/
+    box-shadow: 0 0 3px #666;
+    border-style: ridge;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.github {
+    display: block;
+    padding: 0 10px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(224, 238, 237);
+}
+
+.copyright {
+    padding: .55em;
+}
+
+.copyright p {
+    color: white;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.rs {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}
