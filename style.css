@@ -202,7 +202,7 @@ img {
     .main-container {
         background-color: #89c4c9;
         border: 8px solid rgba(145, 167, 145, 0.5);
-        /*Параметрырамки*/
+        /*Параметры рамки*/
         border-radius: 3% 1%;
         box-shadow: 0 0 7px rgb(15, 175, 175);
         border-style: solid;
