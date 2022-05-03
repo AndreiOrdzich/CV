@@ -181,6 +181,10 @@ img {
     padding-top: 20px;
 }
 
+pre {
+    font-weight: bold;
+}
+
 @media (min-width: 1280px) {
     .section {
         width: 100%;
