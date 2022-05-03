@@ -1,5 +1,5 @@
 
-https://andreiordzich.github.io/cv/.md
+https://andreiordzich.github.io/CV/.md
 ***
 
-https://andreiordzich.github.io/cv/index.html
+https://andreiordzich.github.io/CV/index.html
