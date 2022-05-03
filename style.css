@@ -68,6 +68,10 @@ a:hover {
 
 .main {
     width: auto;
+    background-image: linear-gradient(45deg, rgb(97%, 64%, 38%, 1), rgb(43%, 62%, 79%, 1));
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -87,12 +91,16 @@ a:hover {
     grid-template-areas: ". ." ". ." "section-title-courses section-title-courses" "section-projects section-projects" ". ." "section-title-skills section-title-skills";
     justify-items: stretch;
     flex-wrap: wrap;
-    background-color: #89c4c9;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) saturate(110%) contrast(50%);
     border: 8px solid rgba(145, 167, 145, 0.5);
     /*Параметрырамки*/
-    border-radius: 15% 1%;
-    box-shadow: 0 0 7px rgb(15, 175, 175);
-    border-style: solid;
+    box-shadow: 0 0 7px rgb(63, 83, 83);
+    border-radius: 8% 3%;
+    -webkit-border-radius: 8% 3%;
+    -moz-border-radius: 8% 3%;
+    -ms-border-radius: 8% 3%;
+    -o-border-radius: 8% 3%;
 }
 
 @media (max-width: 520px) {
@@ -189,14 +197,6 @@ pre {
     .section {
         width: 100%;
     }
-    .main-container {
-        background-color: #89c4c9;
-        border: 8px solid rgba(145, 167, 145, 0.5);
-        /*Параметрырамки*/
-        border-radius: 10% 1%;
-        box-shadow: 0 0 7px rgb(15, 175, 175);
-        border-style: solid;
-    }
 }
 
 @media (max-width: 768px) {
@@ -204,16 +204,12 @@ pre {
         width: 100%;
     }
     .main-container {
-        background-color: #89c4c9;
         border: 8px solid rgba(145, 167, 145, 0.5);
         /*Параметры рамки*/
         border-radius: 3% 1%;
         box-shadow: 0 0 7px rgb(15, 175, 175);
         border-style: solid;
-        -webkit-border-radius: 3% 1%;
-        -moz-border-radius: 3% 1%;
-        -ms-border-radius: 3% 1%;
-        -o-border-radius: 3% 1%;
+        -webkit-border-radius: 11% 2%;
     }
     .contacts-bgimage {
         display: flex;
@@ -246,7 +242,6 @@ pre {
 
 @media (max-width: 320px) {
     .main-container {
-        background-color: #89c4c9;
         border: 8px solid rgba(145, 167, 145, 0.5);
         /*Параметры рамки*/
         border-radius: 4% 1%;
@@ -498,7 +493,7 @@ pre {
 
 i {
     padding-right: 10px;
-    color: rgba(15, 48, 53, 0.425);
+    color: rgb(223 235 236 / 98%);
 }
 
 .link-container {
