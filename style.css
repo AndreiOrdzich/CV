@@ -194,7 +194,7 @@ pre {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     .section {
         width: 100%;
     }
@@ -525,6 +525,27 @@ i {
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
+}
+
+.sertificat {
+    display: block;
+    width: 128px;
+    height: 91px;
+    background-image: url(./assets/img/certificate-prescchool.png);
+    background-size: cover;
+    transition: .4s;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.sertificat::content {
+    display: block;
+    width: 350px;
+    height: 290px;
+    box-sizing: border-box;
 }
 
 .luxestate {
