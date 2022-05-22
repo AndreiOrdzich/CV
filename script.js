@@ -18,24 +18,28 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
 });
 
 closePopupButton.addEventListener('click', () => { // Вешаем обработчик на крестик
-    body.style.paddingRight = '0px'; // возвращаем рулевой отступ для body
     popupBg.classList.remove('active'); // Убираем активный класс с фона
     popup.classList.remove('active'); // И с окна
-    body.style.overflowY = "visible"; // возвращаем возможность прокрутки документа
     openPopupButtons.forEach((button) => {
         button.classList.remove('opasity-link'); // возвращаем видимость нажатой ссылке
-    })
+    });
+    setTimeout(function() {
+        body.style.overflowY = "visible"; // возвращаем возможность прокрутки документа
+        body.style.paddingRight = '0px'; // возвращаем нулевой отступ для body
+    }, 500);
 })
 
 document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-    if (e.target === popupBg) { // Если цель клика - фот, то:
+    if (e.target === popupBg) { // Если цель клика - фон, то:
         popupBg.classList.remove('active'); // Убираем активный класс с фона
         popup.classList.remove('active'); // И с окна
-        body.style.paddingRight = '0px'; //возвращаем рулевой отступ для body
-        body.style.overflowY = "visible"; // возвращаем возможность прокрутки документа
         openPopupButtons.forEach((button) => {
             button.classList.remove('opasity-link'); // возвращаем видимость нажатой ссылке
         })
+        setTimeout(function() {
+            body.style.overflowY = "visible"; // возвращаем возможность прокрутки документа
+            body.style.paddingRight = '0px'; // возвращаем нулевой отступ для body
+        }, 500);
     }
 });
 /*end Popup*/
