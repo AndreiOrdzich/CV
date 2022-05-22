@@ -540,7 +540,7 @@ i {
     position: relative;
     top: 25%;
     margin: auto;
-    height: 70%;
+    height: 50%;
     width: 70%;
     background-image: url(./assets/img/certificate-prescchool.png);
     background-size: contain;
@@ -550,7 +550,7 @@ i {
 
 @media (max-width: 768px) {
     .sertificat {
-        height: 70%;
+        height: 50%;
         width: 70%;
     }
 }
@@ -623,31 +623,38 @@ i {
 
 @media (max-width: 1280px) {
     .popup {
-        top: 26%;
+        top: 20%;
+        left: 37%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .popup {
+        top: 20%;
+        left: 38%;
     }
 }
 
 @media (max-width: 768px) {
     .popup {
-        top: 32%;
+        top: 23%;
+        left: 40%;
     }
-}
-
-@media (max-width: 768px) {
-    .popup {
-        top: 37%;
+    .close-popup {
+        width: 38px;
+        height: 38px;
     }
 }
 
 @media (max-width: 680px) {
     .popup {
-        top: 40%;
+        top: 29%;
     }
 }
 
 @media (max-width: 420px) {
     .popup {
-        top: 42%;
+        top: 37%;
     }
 }
 
