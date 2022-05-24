@@ -693,6 +693,15 @@ i {
     }
 }
 
+@media (max-height: 460px) {
+    .popup__bg.active>.sertificat {
+        top: 5%;
+        margin: auto;
+        height: 90%;
+        width: 63%;
+    }
+}
+
 .close-popup:hover {
     background-color: #fff;
     border-radius: 50%;
