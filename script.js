@@ -3,6 +3,7 @@ let popupBg = document.querySelector('.popup__bg'); // Фон попап окн�
 let popup = document.querySelector('.popup'); // Само окно
 let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
 let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
+let photoAnimation = document.querySelector('.photo'); //анимация фото
 var lockPaddingValue = window.innerWidth - document.querySelector('.container').offsetWidth + 'px'; // подсчет толщины скролла
 
 /*start Popup*/
@@ -43,3 +44,8 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
     }
 });
 /*end Popup*/
+
+//анимация фото
+photoAnimation.addEventListener('click', () => {
+    photoAnimation.classList.toggle('photo-animation');
+})
