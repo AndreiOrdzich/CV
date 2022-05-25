@@ -4,6 +4,8 @@ let popup = document.querySelector('.popup'); // Само окно
 let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
 let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
 let photoAnimation = document.querySelector('.photo'); //анимация фото
+let linkContainer = document.querySelectorAll('.link-container');
+let sectionItemProject = document.querySelectorAll('.section-item-project');
 var lockPaddingValue = window.innerWidth - document.querySelector('.container').offsetWidth + 'px'; // подсчет толщины скролла
 
 /*start Popup*/
@@ -49,3 +51,12 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
 photoAnimation.addEventListener('click', () => {
     photoAnimation.classList.toggle('photo-animation');
 })
+
+//Выделение посещенных ссылок
+// sectionItemProject.forEach((element) => { // Перебираем все ссылки
+//     element.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+//         if (e.target === element) {
+//             element.classList.add('link-visited')
+//         }
+//     })
+// })

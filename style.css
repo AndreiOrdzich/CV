@@ -179,7 +179,6 @@ img {
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
     transition: all ease-in 1s;
-    -webkit-animation-delay: 1s;
     -webkit-transition: all ease-in 1s;
     -moz-transition: all ease-in 1s;
     -ms-transition: all ease-in 1s;
@@ -528,6 +527,18 @@ i {
     -o-border-radius: 10px;
 }
 
+.link-visited {
+    background-color: #4a696b7c;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 35px 14px rgb(13 13 13 / 4%);
+    box-shadow: 0px 2px 35px 14px rgb(13 13 13 / 4%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 .link-container:hover {
     border-top: none;
     box-shadow: inset 5px 5px burlywood;
@@ -543,14 +554,15 @@ i {
     display: block;
     width: 128px;
     height: 91px;
+    opacity: 1;
     background-image: url(./assets/img/certificate-prescchool.png);
     background-size: cover;
     cursor: pointer;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    -o-transition: 0.5s all;
+    transition: 0.5s all ease-out;
+    -webkit-transition: 0.5s all ease-out;
+    -moz-transition: 0.5s all ease-out;
+    -ms-transition: 0.5s all ease-out;
+    -o-transition: 0.5s all ease-out;
 }
 
 @media (max-width: 768px) {
@@ -561,12 +573,12 @@ i {
 }
 
 .opasity-link {
-    background: none;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    -o-transition: 0.5s all;
+    opacity: 0;
+    transition: 0.5s all ease-out;
+    -webkit-transition: 0.5s all ease-out;
+    -moz-transition: 0.5s all ease-out;
+    -ms-transition: 0.5s all ease-out;
+    -o-transition: 0.5s all ease-out;
 }
 
 .popup__bg {
@@ -619,14 +631,26 @@ i {
 }
 
 .sertificat {
-    position: absolute;
-    top: 0%;
-    transition: 0.5s all;
-    transform: translate(0px, 0%) rotate(45deg);
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    -o-transition: 0.5s all;
+    position: relative;
+    top: 25%;
+    margin: auto;
+    height: 50%;
+    width: 70%;
+    opacity: 0;
+    background-image: url(./assets/img/certificate-prescchool.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1.5s all ease-out;
+    transform: translate(0px, -45%) rotate(45deg);
+    -webkit-transition: 1.5s all ease-out;
+    -moz-transition: 1.5s all ease-out;
+    -ms-transition: 1.5s all ease-out;
+    -o-transition: 1.5s all ease-out;
+    -webkit-transform: translate(0px, -45%) rotate(45deg);
+    -moz-transform: translate(0px, -45%) rotate(45deg);
+    -ms-transform: translate(0px, -45%) rotate(45deg);
+    -o-transform: translate(0px, -45%) rotate(45deg);
 }
 
 .popup {
@@ -664,8 +688,14 @@ i {
 .close-popup {
     position: absolute;
     left: 100%;
+    background-color: rgba(210, 208, 99, 0.778);
+    border-radius: 50%;
     cursor: pointer;
     z-index: 101;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 @media (max-width: 1280px) {
