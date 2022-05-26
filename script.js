@@ -6,6 +6,7 @@ let closePopupButton = document.querySelector('.close-popup'); // Кнопка �
 let photoAnimation = document.querySelector('.photo'); //анимация фото
 let linkContainer = document.querySelectorAll('.link-container');
 let sectionItemProject = document.querySelectorAll('.section-item-project');
+var img = document.querySelector('img');
 var lockPaddingValue = window.innerWidth - document.querySelector('.container').offsetWidth + 'px'; // подсчет толщины скролла
 
 /*start Popup*/
@@ -48,15 +49,46 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
 /*end Popup*/
 
 //анимация фото
-photoAnimation.addEventListener('click', () => {
-    photoAnimation.classList.toggle('photo-animation');
+let revers;
+photoAnimation.addEventListener('click', (event) => {
+    img.setAttribute('style', 'transition: 1s');
+    if (event.target.classList.contains('photo-animation')) {
+        photoAnimation.classList.remove('photo-animation');
+        revers = 'revers';
+    } else {
+        photoAnimation.classList.add('photo-animation');
+        revers = 'avers';
+    }
 })
+
+
+//local storage
+function setLocalStorage() {
+    localStorage.setItem('revers', revers);
+    localStorage.setItem('avers', revers);
+
+}
 
 //Выделение посещенных ссылок
 // sectionItemProject.forEach((element) => { // Перебираем все ссылки
 //     element.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
 //         if (e.target === element) {
-//             element.classList.add('link-visited')
+//             element.classList.add('link-visited');
 //         }
 //     })
 // })
+
+function getLocalStorage() {
+    if (localStorage.getItem('revers')) {
+        revers = localStorage.getItem('revers');
+        if (revers === 'avers') {
+            photoAnimation.classList.add('photo-animation');
+            img.setAttribute('style', 'transition:none'); //отключение анимации при повторной загрузке страницы
+        } else if (revers === 'revers') {
+            img.setAttribute('style', 'transition: 1s'); //восстановление анимации поворота фото
+        }
+    }
+};
+//вызовы функций локального хранилища
+window.addEventListener('load', getLocalStorage);
+window.addEventListener('beforeunload', setLocalStorage);
