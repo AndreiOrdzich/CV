@@ -876,6 +876,10 @@ i {
     padding: 0px;
 }
 
+.reset-button:hover i {
+    color: rgb(17, 46, 10);
+}
+
 footer {
     display: flex;
     justify-content: space-between;
