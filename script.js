@@ -170,14 +170,14 @@ function getLocalStorage() {
         luxestateId.classList.add('link-visited');
         visitedStorage.push(luxestateId);
         clear.forEach(i => {
-            i.setAttribute('style', 'opacity: 1');
+            i.setAttribute('style', 'opacity: 1; cursor: pointer');
             i.addEventListener('click', () => {
                 for (let index = 0; index < visitedStorage.length; index++) {
                     const element = visitedStorage[index];
                     if (element.classList.contains('link-visited')) {
                         element.classList.remove('link-visited');
                     }
-                    i.setAttribute('style', 'opacity: 0');
+                    i.setAttribute('style', 'opacity: 0; cursor: default');
                 }
             })
         });
@@ -187,14 +187,14 @@ function getLocalStorage() {
         wildVacationId.classList.add('link-visited');
         visitedStorage.push(wildVacationId);
         clear.forEach(i => {
-            i.setAttribute('style', 'opacity: 1');
+            i.setAttribute('style', 'opacity: 1; cursor: pointer');
             i.addEventListener('click', () => {
                 for (let index = 0; index < visitedStorage.length; index++) {
                     const element = visitedStorage[index];
                     if (element.classList.contains('link-visited')) {
                         element.classList.remove('link-visited');
                     }
-                    i.setAttribute('style', 'opacity: 0');
+                    i.setAttribute('style', 'opacity: 0; cursor: default');
                 }
             })
         });
@@ -204,14 +204,14 @@ function getLocalStorage() {
         roadsiteStudioId.classList.add('link-visited');
         visitedStorage.push(roadsiteStudioId);
         clear.forEach(i => {
-            i.setAttribute('style', 'opacity: 1');
+            i.setAttribute('style', 'opacity: 1; cursor: pointer');
             i.addEventListener('click', () => {
                 for (let index = 0; index < visitedStorage.length; index++) {
                     const element = visitedStorage[index];
                     if (element.classList.contains('link-visited')) {
                         element.classList.remove('link-visited');
                     }
-                    i.setAttribute('style', 'opacity: 0');
+                    i.setAttribute('style', 'opacity: 0; cursor: default');
                 }
             })
         });
@@ -221,14 +221,14 @@ function getLocalStorage() {
         portfolioScreenshotId.classList.add('link-visited');
         visitedStorage.push(portfolioScreenshotId);
         clear.forEach(i => {
-            i.setAttribute('style', 'opacity: 1');
+            i.setAttribute('style', 'opacity: 1; cursor: pointer');
             i.addEventListener('click', () => {
                 for (let index = 0; index < visitedStorage.length; index++) {
                     const element = visitedStorage[index];
                     if (element.classList.contains('link-visited')) {
                         element.classList.remove('link-visited');
                     }
-                    i.setAttribute('style', 'opacity: 0');
+                    i.setAttribute('style', 'opacity: 0; cursor: default');
                 }
             })
         });
@@ -238,14 +238,14 @@ function getLocalStorage() {
         imageGaleryId.classList.add('link-visited');
         visitedStorage.push(imageGaleryId);
         clear.forEach(i => {
-            i.setAttribute('style', 'opacity: 1');
+            i.setAttribute('style', 'opacity: 1; cursor: pointer');
             i.addEventListener('click', () => {
                 for (let index = 0; index < visitedStorage.length; index++) {
                     const element = visitedStorage[index];
                     if (element.classList.contains('link-visited')) {
                         element.classList.remove('link-visited');
                     }
-                    i.setAttribute('style', 'opacity: 0');
+                    i.setAttribute('style', 'opacity: 0; cursor: default');
                 }
             })
         });
@@ -255,14 +255,14 @@ function getLocalStorage() {
         ecoSoundsId.classList.add('link-visited');
         visitedStorage.push(ecoSoundsId);
         clear.forEach(i => {
-            i.setAttribute('style', 'opacity: 1');
+            i.setAttribute('style', 'opacity: 1; cursor: pointer');
             i.addEventListener('click', () => {
                 for (let index = 0; index < visitedStorage.length; index++) {
                     const element = visitedStorage[index];
                     if (element.classList.contains('link-visited')) {
                         element.classList.remove('link-visited');
                     }
-                    i.setAttribute('style', 'opacity: 0');
+                    i.setAttribute('style', 'opacity: 0; cursor: default');
                 }
             })
         });
@@ -272,14 +272,14 @@ function getLocalStorage() {
         memoryGameId.classList.add('link-visited');
         visitedStorage.push(memoryGameId);
         clear.forEach(i => {
-            i.setAttribute('style', 'opacity: 1');
+            i.setAttribute('style', 'opacity: 1; cursor: pointer');
             i.addEventListener('click', () => {
                 for (let index = 0; index < visitedStorage.length; index++) {
                     const element = visitedStorage[index];
                     if (element.classList.contains('link-visited')) {
                         element.classList.remove('link-visited');
                     }
-                    i.setAttribute('style', 'opacity: 0');
+                    i.setAttribute('style', 'opacity: 0; cursor: default');
                 }
             })
         });
@@ -289,14 +289,14 @@ function getLocalStorage() {
         shelterId.classList.add('link-visited');
         visitedStorage.push(shelterId);
         clear.forEach(i => {
-            i.setAttribute('style', 'opacity: 1');
+            i.setAttribute('style', 'opacity: 1; cursor: pointer');
             i.addEventListener('click', () => {
                 for (let index = 0; index < visitedStorage.length; index++) {
                     const element = visitedStorage[index];
                     if (element.classList.contains('link-visited')) {
                         element.classList.remove('link-visited');
                     }
-                    i.setAttribute('style', 'opacity: 0');
+                    i.setAttribute('style', 'opacity: 0; cursor: default');
                 }
             })
         });

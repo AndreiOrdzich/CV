@@ -206,7 +206,7 @@ pre {
     }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 863px) {
     .section {
         width: 100%;
     }
@@ -823,10 +823,6 @@ i {
     z-index: 1;
 }
 
-.reset-button-none {
-    display: none;
-}
-
 .reset-button {
     display: flex;
     align-items: center;
@@ -835,32 +831,45 @@ i {
     margin-top: 10px;
     width: 90px;
     height: 30px;
-    background-color: #004d47;
-    box-sizing: border-box;
+    background: #729e85;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#729e85), to(#486d5c));
+    background: -moz-linear-gradient(#729e85, #486d5c);
+    background: linear-gradient(#729e85, #486d5c);
+    border: solid 1px #236036;
+    border-bottom: solid 3px #225f33;
+    box-shadow: inset 0 0 0 1px #90a59c;
+    color: #fff;
+    text-shadow: 0 1px 0 #225f33;
     cursor: pointer;
-    transition: all 1s ease-out;
+    transition: all .5s ease-out;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -ms-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
 }
 
 .reset-button:hover {
-    background-color: #fff;
-    border: #004d47 solid 1px;
-}
-
-.reset-button:hover i {
-    color: #004d47;
+    background: #486d5c;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#486d5c), to(#729e85));
+    background: -moz-linear-gradient(#486d5c, #729e85);
+    background: linear-gradient(#486d5c, #729e85);
+    border: solid 1px #236036;
+    border-bottom: solid 3px #225f33;
+    box-shadow: inset 0 0 0 1px #90a59c;
 }
 
 .reset-button:active {
-    border: #fff solid 2px;
+    background: #486d5c;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#486d5c), to(#729e85));
+    background: -moz-linear-gradient(#486d5c, #729e85);
+    background: linear-gradient(#486d5c, #729e85);
+    border: solid 1px #236036;
+    box-shadow: inset 0 10px 15px 0 #225f33;
 }
 
 .reset-button i {
