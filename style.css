@@ -99,7 +99,7 @@ a:hover {
     -o-border-radius: 8% 3%;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 604px) {
     .main-container {
         display: flex;
         flex-direction: column;
@@ -683,11 +683,16 @@ i {
     background-color: rgba(210, 208, 99, 0.778);
     border-radius: 50%;
     cursor: pointer;
+    transition: all.5s;
     z-index: 101;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    -webkit-transition: all.5s;
+    -moz-transition: all.5s;
+    -ms-transition: all.5s;
+    -o-transition: all.5s;
 }
 
 @media (max-width: 1280px) {
@@ -804,6 +809,123 @@ i {
     z-index: 1;
 }
 
+#luxestateId:hover>:nth-child(1)::after {
+    content: 'more than 3 years ago';
+    position: relative;
+    display: block;
+    float: right;
+    width: 130px;
+    height: 20px;
+    font-size: 12px;
+    color: #000;
+    /*Размертекста*/
+    text-align: center;
+    /*Выравниваемтекстпоцентру*/
+}
+
+#wildVacationId:hover>:nth-child(1)::after {
+    content: '2 years ago';
+    position: relative;
+    display: block;
+    float: right;
+    width: 120px;
+    height: 20px;
+    font-size: 12px;
+    color: #000;
+    /*Размертекста*/
+    text-align: center;
+    /*Выравниваемтекстпоцентру*/
+}
+
+#roadsiteStudioId:hover>:nth-child(1)::after {
+    content: '8 years ago';
+    position: relative;
+    display: block;
+    float: right;
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+    color: #000;
+    /*Размертекста*/
+    text-align: center;
+    /*Выравниваемтекстпоцентру*/
+}
+
+#portfolioScreenshotId:hover>:nth-child(1)::after {
+    content: 'recently';
+    position: relative;
+    display: block;
+    float: right;
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    color: rgb(255, 254, 254);
+    letter-spacing: .12em;
+    /*Размертекста*/
+    text-align: left;
+    /*Выравниваемтекстпоцентру*/
+}
+
+#memoryGameId:hover>:nth-child(1)::after {
+    content: 'recently';
+    position: relative;
+    display: block;
+    float: right;
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    color: rgb(255, 254, 254);
+    letter-spacing: .12em;
+    /*Размертекста*/
+    text-align: left;
+    /*Выравниваемтекстпоцентру*/
+}
+
+#imageGaleryId:hover>:nth-child(1)::after {
+    content: 'recently';
+    position: relative;
+    display: block;
+    float: right;
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    color: rgb(255, 254, 254);
+    letter-spacing: .12em;
+    /*Размертекста*/
+    text-align: left;
+    /*Выравниваемтекстпоцентру*/
+}
+
+#ecoSoundsId:hover>:nth-child(1)::after {
+    content: 'recently';
+    position: relative;
+    display: block;
+    float: right;
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    color: rgb(255, 254, 254);
+    letter-spacing: .12em;
+    /*Размертекста*/
+    text-align: left;
+    /*Выравниваемтекстпоцентру*/
+}
+
+#shelterId:hover>:nth-child(1)::after {
+    content: 'in progress';
+    position: relative;
+    display: block;
+    float: right;
+    width: 78px;
+    height: 20px;
+    font-size: 12px;
+    color: rgb(255, 254, 254);
+    letter-spacing: .12em;
+    /*Размертекста*/
+    text-align: left;
+    /*Выравниваемтекстпоцентру*/
+}
+
 .link-visited {
     position: relative;
 }
@@ -900,6 +1022,12 @@ footer {
     flex-wrap: nowrap;
     flex-direction: row;
     margin-left: 5%;
+}
+
+@media(max-width:325px) {
+    .footer-container {
+        margin: 0px;
+    }
 }
 
 .github {

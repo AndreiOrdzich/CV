@@ -301,9 +301,11 @@ function getLocalStorage() {
             })
         });
     }
-
 }
+
+
+
 //вызовы функций локального хранилища
 window.addEventListener('load', getLocalStorage);
 window.addEventListener('beforeunload', setLocalStorage);
-// localStorage.c
+// localStorage.clear();
