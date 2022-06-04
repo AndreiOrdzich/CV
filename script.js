@@ -115,6 +115,7 @@ sectionItemProject.forEach((element) => { // Перебираем все ссы�
                             element.classList.remove('link-visited');
                         }
                         i.setAttribute('style', 'opacity: 0');
+
                     }
                 })
             });
@@ -178,6 +179,7 @@ function getLocalStorage() {
                         element.classList.remove('link-visited');
                     }
                     i.setAttribute('style', 'opacity: 0; cursor: default');
+                    localStorage.clear();
                 }
             })
         });
@@ -195,6 +197,7 @@ function getLocalStorage() {
                         element.classList.remove('link-visited');
                     }
                     i.setAttribute('style', 'opacity: 0; cursor: default');
+                    localStorage.clear();
                 }
             })
         });
@@ -212,6 +215,7 @@ function getLocalStorage() {
                         element.classList.remove('link-visited');
                     }
                     i.setAttribute('style', 'opacity: 0; cursor: default');
+                    localStorage.clear();
                 }
             })
         });
@@ -229,6 +233,7 @@ function getLocalStorage() {
                         element.classList.remove('link-visited');
                     }
                     i.setAttribute('style', 'opacity: 0; cursor: default');
+                    localStorage.clear();
                 }
             })
         });
@@ -246,6 +251,7 @@ function getLocalStorage() {
                         element.classList.remove('link-visited');
                     }
                     i.setAttribute('style', 'opacity: 0; cursor: default');
+                    localStorage.clear();
                 }
             })
         });
@@ -263,6 +269,7 @@ function getLocalStorage() {
                         element.classList.remove('link-visited');
                     }
                     i.setAttribute('style', 'opacity: 0; cursor: default');
+                    localStorage.clear();
                 }
             })
         });
@@ -280,6 +287,7 @@ function getLocalStorage() {
                         element.classList.remove('link-visited');
                     }
                     i.setAttribute('style', 'opacity: 0; cursor: default');
+                    localStorage.clear();
                 }
             })
         });
@@ -297,6 +305,7 @@ function getLocalStorage() {
                         element.classList.remove('link-visited');
                     }
                     i.setAttribute('style', 'opacity: 0; cursor: default');
+                    localStorage.clear();
                 }
             })
         });
