@@ -1024,7 +1024,7 @@ i {
     box-shadow: inset 0 0 0 1px #90a59c;
     color: #fff;
     text-shadow: 0 1px 0 #225f33;
-    cursor: default;
+    cursor: pointer;
     transition: all .5s ease-out;
     border-radius: 3px;
     -webkit-border-radius: 3px;
