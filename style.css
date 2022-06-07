@@ -71,6 +71,76 @@ a:hover {
     background-blend-mode: soft-light;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 1s ease-out;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -ms-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+}
+
+.main-animation {
+    background-image: linear-gradient(90deg, rgb(43%, 62%, 79%, 1), rgb(97%, 64%, 38%, 1));
+    background-size: 800% 800%;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    -webkit-animation: rainbow 10s ease infinite;
+    -moz-animation: rainbow 10s ease infinite;
+    -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;
+    animation-delay: 2s;
+    transition: 1s ease-out;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -ms-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+    50% {
+        background-position: 100% 19%
+    }
+    100% {
+        background-position: 0% 82%
+    }
 }
 
 .container {
@@ -92,9 +162,10 @@ a:hover {
     flex-wrap: wrap;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px) saturate(110%) contrast(50%);
-    border: 8px solid rgba(145, 167, 145, 0.5);
+    border: 8px solid #004d47;
     /*Параметрырамки*/
-    box-shadow: 0 0 7px rgb(63, 83, 83);
+    box-shadow: 0 0 7px rgb(15, 175, 175);
+    border-style: solid;
     border-radius: 8% 3%;
     -webkit-border-radius: 8% 3%;
     -moz-border-radius: 8% 3%;
@@ -160,9 +231,9 @@ img {
     /*Safari6.0-9.0*/
     border-radius: 250px;
     /*Радиусскругления*/
-    border: 5px solid rgba(145, 167, 145, 0.5);
+    border: 5px solid #004d47;
     /*Параметры рамки*/
-    box-shadow: 0 0 7px rgb(63, 83, 83);
+    box-shadow: 0 0 30px rgb(148, 213, 213);
     /*Параметры тени*/
     -webkit-border-radius: 250px;
     -moz-border-radius: 250px;
@@ -183,11 +254,14 @@ img {
     -webkit-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    box-shadow: 0 0 35px rgba(36, 101, 65, 0.681);
     transition: all ease-in 1s;
     -webkit-transition: all ease-in 1s;
     -moz-transition: all ease-in 1s;
     -ms-transition: all ease-in 1s;
     -o-transition: all ease-in 1s;
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 .contacts-bgimage>h2 {
@@ -215,7 +289,7 @@ pre {
         width: 100%;
     }
     .main-container {
-        border: 8px solid rgba(145, 167, 145, 0.5);
+        border: 8px solid #004d47;
         /*Параметры рамки*/
         border-radius: 3% 1%;
         box-shadow: 0 0 7px rgb(15, 175, 175);
@@ -760,7 +834,6 @@ i {
     position: relative;
     background-image: url(./assets/img/Lluxestate-screenshot.png);
     background-size: cover;
-    transition: all 0.5s;
     z-index: 1;
 }
 
@@ -822,9 +895,7 @@ i {
     height: 20px;
     font-size: 12px;
     color: #000;
-    /*Размертекста*/
     text-align: center;
-    /*Выравниваемтекстпоцентру*/
 }
 
 #wildVacationId:hover>:nth-child(1)::after {
@@ -836,9 +907,7 @@ i {
     height: 20px;
     font-size: 12px;
     color: #000;
-    /*Размертекста*/
     text-align: center;
-    /*Выравниваемтекстпоцентру*/
 }
 
 #roadsiteStudioId:hover>:nth-child(1)::after {
@@ -850,9 +919,7 @@ i {
     height: 20px;
     font-size: 12px;
     color: #000;
-    /*Размертекста*/
     text-align: center;
-    /*Выравниваемтекстпоцентру*/
 }
 
 #portfolioScreenshotId:hover>:nth-child(1)::after {
@@ -865,9 +932,7 @@ i {
     font-size: 12px;
     color: rgb(255, 254, 254);
     letter-spacing: .12em;
-    /*Размертекста*/
     text-align: left;
-    /*Выравниваемтекстпоцентру*/
 }
 
 #memoryGameId:hover>:nth-child(1)::after {
@@ -880,9 +945,7 @@ i {
     font-size: 12px;
     color: rgb(255, 254, 254);
     letter-spacing: .12em;
-    /*Размертекста*/
     text-align: left;
-    /*Выравниваемтекстпоцентру*/
 }
 
 #imageGaleryId:hover>:nth-child(1)::after {
@@ -895,9 +958,7 @@ i {
     font-size: 12px;
     color: rgb(255, 254, 254);
     letter-spacing: .12em;
-    /*Размертекста*/
     text-align: left;
-    /*Выравниваемтекстпоцентру*/
 }
 
 #ecoSoundsId:hover>:nth-child(1)::after {
@@ -910,9 +971,7 @@ i {
     font-size: 12px;
     color: rgb(255, 254, 254);
     letter-spacing: .12em;
-    /*Размертекста*/
     text-align: left;
-    /*Выравниваемтекстпоцентру*/
 }
 
 #shelterId:hover>:nth-child(1)::after {
@@ -925,9 +984,7 @@ i {
     font-size: 12px;
     color: rgb(255, 254, 254);
     letter-spacing: .12em;
-    /*Размертекста*/
     text-align: left;
-    /*Выравниваемтекстпоцентру*/
 }
 
 .link-visited {
@@ -940,13 +997,13 @@ i {
     background-clip: content-box;
     background-position: center;
     background-size: contain;
-    display: block;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 1;
+    cursor: default;
 }
 
 .reset-button {
@@ -1013,6 +1070,10 @@ i {
     border-radius: 40px;
     opacity: 0;
     transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .reset-button:hover:before {

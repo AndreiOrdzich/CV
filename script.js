@@ -9,6 +9,7 @@ let sectionItemProject = document.querySelectorAll('.section-item-project');
 let clear = document.querySelectorAll('.reset-button'); //очистка посещенных страниц
 let linkVisited = document.querySelectorAll('.link-visited');
 var img = document.querySelector('img');
+var main = document.querySelector('main');
 var lockPaddingValue = window.innerWidth - document.querySelector('.container').offsetWidth + 'px'; // подсчет толщины скролла
 
 const luxestate = document.querySelector('.luxestate');
@@ -77,12 +78,14 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
 //анимация фото
 let revers;
 photoAnimation.addEventListener('click', (event) => {
-    img.setAttribute('style', 'transition: 1s');
+    img.setAttribute('style', 'transition: 1s;');
     if (event.target.classList.contains('photo-animation')) {
         photoAnimation.classList.remove('photo-animation');
+        main.classList.remove('main-animation');
         revers = 'revers';
     } else {
         photoAnimation.classList.add('photo-animation');
+        main.classList.add('main-animation');
         revers = 'avers';
     }
 })
