@@ -254,7 +254,6 @@ img {
     -webkit-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    box-shadow: 0 0 35px rgba(36, 101, 65, 0.681);
     transition: all ease-in 1s;
     -webkit-transition: all ease-in 1s;
     -moz-transition: all ease-in 1s;
@@ -262,6 +261,19 @@ img {
     -o-transition: all ease-in 1s;
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
+    animation: shadow 1s infinite alternate;
+    filter: drop-shadow(0 0 10px #d3e8df);
+    -webkit-filter: drop-shadow(0 0 10px #d3e8df);
+    animation-duration: 10s;
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 0 0 20px 5px rgb(97%, 64%, 38%, 1);
+    }
+    to {
+        box-shadow: 0 0 10px 3px #465b4b;
+    }
 }
 
 .contacts-bgimage>h2 {
