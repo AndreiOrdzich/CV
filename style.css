@@ -25,6 +25,24 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 14px;
+    background-color: #f9f9fd;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background: linear-gradient(90deg, rgb(15, 175, 175), #004d47);
+    background-size: cover;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(43%, 62%, 79%, 1), rgb(97%, 64%, 38%, 1));
+}
+
 h1,
 h2,
 h3 {
