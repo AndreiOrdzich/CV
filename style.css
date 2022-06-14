@@ -26,11 +26,18 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 14px;
-    background-color: #f9f9fd;
+    width: 16px;
+    background-color: hsla(240, 45%, 98%, 0);
 }
 
 body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background: linear-gradient(90deg, rgb(15, 175, 175), #004d47);
+    background-size: cover;
+}
+
+body::-moz-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
     background: linear-gradient(90deg, rgb(15, 175, 175), #004d47);
