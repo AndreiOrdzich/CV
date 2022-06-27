@@ -250,6 +250,7 @@ a:hover {
 
 img {
     margin: 10px;
+    object-fit: cover;
     filter: grayscale(35%);
     cursor: pointer;
     -webkit-filter: grayscale(35%);
